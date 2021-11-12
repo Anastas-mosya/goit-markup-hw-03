@@ -120,7 +120,7 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.conteiner-contscts {
+.conteiner-contacts {
   margin-left: auto;
 }
 .header-contact {
@@ -189,6 +189,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--second-title-color);
+  margin-bottom: 10px;
 }
 /*--------WORK----------------*/
 
