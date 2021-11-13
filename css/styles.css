@@ -28,7 +28,7 @@ img {
   height: auto;
 }
 
-.conteiner {
+.container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -49,7 +49,6 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-
   letter-spacing: 0.03em;
   color: var(--second-title-color);
 }
@@ -120,7 +119,7 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.conteiner-contacts {
+.container-contacts {
   margin-left: auto;
 }
 .header-contact {
@@ -247,7 +246,7 @@ body {
   text-align: left;
   background: var(--footer-background-color);
 }
-.footer-conteiner {
+.footer-container {
   width: 1600px;
   height: 252px;
   padding: 60px 1240px 161px 215px;
@@ -255,6 +254,8 @@ body {
 }
 .footer-logo {
   font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -289,29 +290,55 @@ body {
 }
 
 /*--------PORTFOLIO----------------*/
-
-.imajes-title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--main-title-color);
+.buttons-list {
+  display: flex;
+  justify-content: center;
+  padding-top: 72px;
+  margin-bottom: 50px;
+}
+.buttons-list > .buttons-item:not(:last-child) {
+  margin-right: 8px;
 }
 .buttons-btn:hover,
 :focus {
   background-color: var(--accent-color);
   cursor: pointer;
-  color: #ffffff;
+  color: var(--main-btn-color);
 }
 .button {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
-  /* identical to box height, or 162% */
-
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  color: var(--second-text-color);
+}
 
-  color: #ffffff;
+/*--------IMAGES----------------*/
+.images-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.images-item {
+  max-width: 100%;
+  height: auto;
+}
+.images-list > .images-item {
+  flex-basis: calc(100% / 3-30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.images-card {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+.images-contents {
+  padding: 20px 24px;
+}
+.images-text {
+  margin-top: 4px;
 }
