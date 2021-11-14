@@ -142,7 +142,6 @@ body {
 /*--------HERO----------------*/
 .hero {
   text-align: center;
-  background-color: var(--second-title-color);
 }
 .hero-container {
   width: 1600px;
@@ -245,6 +244,7 @@ body {
   text-align: center;
 }
 /*--------FOOTER----------------*/
+
 .footer {
   text-align: left;
   background: var(--footer-background-color);
@@ -334,7 +334,7 @@ body {
   margin-top: 30px;
 }
 .images-card {
-  background: #ffffff;
+  background: var(--second-text-color);
   border: 1px solid #eeeeee;
   box-sizing: border-box;
 }
@@ -342,7 +342,7 @@ body {
   padding: 20px 24px;
 }
 .images-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
