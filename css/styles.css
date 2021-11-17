@@ -19,6 +19,7 @@ p {
   margin: 0;
 }
 ul {
+  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -34,6 +35,7 @@ img {
   padding-right: 15px;
   margin: 0 auto;
 }
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -56,13 +58,9 @@ body {
   padding-top: 0;
 }
 .team-section {
-  background-color: var(--second-title-color);
+  background-color: #f5f4fa;
 }
-.list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
+
 .link {
   text-decoration: none;
 }
@@ -79,8 +77,7 @@ body {
 }
 /*--------HEADER----------------*/
 .header {
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
+  border-bottom: 1px solid #eeeeee;
 }
 .header-logo {
   font-family: Raleway, sans-serif;
@@ -105,12 +102,13 @@ body {
   margin-right: 50px;
 }
 .header-link {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--header-text-color);
-  padding-top: 32;
+  padding-top: 32px;
   padding-bottom: 32px;
 }
 .header-link:hover,
@@ -121,9 +119,15 @@ body {
   display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
-}
-.container-contacts {
   margin-left: auto;
+}
+.list-contact:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-contact:hover,
+.header-contact:focus {
+  color: var(--accent-color);
 }
 .header-contact {
   font-weight: 500;
@@ -132,23 +136,19 @@ body {
   letter-spacing: 0.02em;
   color: var(--main-text-color);
   display: block;
-  margin-right: 50px;
-}
-.header-contact:hover,
-.header-contact:focus {
-  color: var(--accent-color);
 }
 
 /*--------HERO----------------*/
 .hero {
   background-color: var(--footer-background-color);
-  text-align: center;
-}
-.hero-container {
   max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -170,6 +170,7 @@ body {
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: transparent;
   min-width: 200px;
   min-height: 50px;
   margin-top: 30px;
@@ -177,7 +178,6 @@ body {
 /*--------FEATURES----------------*/
 .features-list {
   display: flex;
-  justify-content: space-between;
 }
 .features-item:not(:last-child) {
   margin-right: 30px;
@@ -235,6 +235,10 @@ body {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+.container-name {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .team-item-name {
   font-weight: 500;
   font-size: 16px;
@@ -242,7 +246,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-title-color);
-  margin-top: 30px;
+
   margin-bottom: 10px;
 }
 .team-text {
@@ -251,7 +255,6 @@ body {
 /*--------FOOTER----------------*/
 
 .footer {
-  text-align: left;
   background: var(--footer-background-color);
   padding: 60px 0;
 }
@@ -274,7 +277,9 @@ body {
 }
 .footer-adress {
   margin-top: 20px;
-  width: 231px;
+}
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 .footer-coordinates {
   font-style: normal;
@@ -297,20 +302,21 @@ body {
 .buttons-list {
   display: flex;
   justify-content: center;
-  padding-top: 72px;
   margin-bottom: 50px;
 }
 .buttons-list > .buttons-item:not(:last-child) {
   margin-right: 8px;
 }
 .buttons-btn:hover,
-:focus {
+.buttons-btn:focus {
   background-color: var(--accent-color);
   cursor: pointer;
   color: var(--main-btn-color);
 }
 .buttons-btn {
   border-style: none;
+  border-radius: 4px;
+  padding: 6px 22px 6px 22px;
 }
 .button {
   font-style: normal;
@@ -333,18 +339,17 @@ body {
   max-width: 100%;
   height: auto;
 }
-.images-list > .images-item {
-  flex-basis: calc(100% / 3-30px);
+.images-item {
+  flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
 }
-.images-card {
-  background: var(--second-text-color);
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
-}
+
 .images-contents {
   padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  border-top: none;
 }
 .images-title {
   font-weight: 700;
